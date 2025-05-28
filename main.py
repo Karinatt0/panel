@@ -198,7 +198,7 @@ def first():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP('79.141.166.29', 6040) as server:
+        with smtplib.SMTP('mail.brazilchinachamber.com', 465) as server:
             server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
@@ -239,7 +239,7 @@ def second():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP('79.141.166.29', 6040) as server:
+        with smtplib.SMTP('mail.brazilchinachamber.com', 465) as server:
             server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
